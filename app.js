@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const port = 3000
+
 //json parser
 app.use(
 bodyParser.urlencoded({
@@ -9,9 +9,7 @@ bodyParser.urlencoded({
 })
 );
 app.use(bodyParser.json());
-app.listen(port,()=>{
-    console.log('server started on port: '+ port);
-})
+app.listen(process.env.PORT || 5000)
 app.route('/').get((req,res)=>{
     res.send("Hello world");
     console.log("Yes")
