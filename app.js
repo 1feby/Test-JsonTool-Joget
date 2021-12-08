@@ -18,4 +18,5 @@ app.route('/').post((req,res)=>{
     console.log("yaraaab");
     console.log(req);
     console.log(req.params)
+    res.json({"resMsg": req.body.Status})
 })
