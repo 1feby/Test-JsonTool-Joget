@@ -15,6 +15,6 @@ app.route('/').get((req,res)=>{
     console.log("Yes")
 })
 app.route('/').post((req,res)=>{
-    console.log(yaraaab);
+    console.log("yaraaab");
     console.log(req.params)
 })
