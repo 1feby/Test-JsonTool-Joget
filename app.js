@@ -16,5 +16,6 @@ app.route('/').get((req,res)=>{
 })
 app.route('/').post((req,res)=>{
     console.log("yaraaab");
-    console.log(req.params.Status)
+    console.log(req);
+    console.log(req.params)
 })
